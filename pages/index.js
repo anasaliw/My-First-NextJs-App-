@@ -16,11 +16,17 @@ export default function Home() {
   // console.log("Data", data);
   const handleGoogle = () => {
     console.log("google signin");
-    signIn("google", { callbackUrl: "http://localhost:3000" });
+    signIn("google", {
+      callbackUrl: "https://my-first-next-js-app-three.vercel.app/",
+    });
+    // signIn("google", { callbackUrl: "http://localhost:3000" });
   };
   const handleGithub = () => {
     console.log("Github signin");
-    signIn("github", { callbackUrl: "http://localhost:3000" });
+    signIn("github", {
+      callbackUrl: "https://my-first-next-js-app-three.vercel.app/",
+    });
+    // signIn("github", { callbackUrl: "http://localhost:3000" });
   };
 
   console.log(session);
